@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "187721590285",
+    "project_id": "debarrios-ar",
+    "storage_bucket": "debarrios-ar.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187721590285:android:2ba19d272c8109f841d744",
+        "android_client_info": {
+          "package_name": "ar.com.debarrios.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRt1wE6c4SZG-2J864MX2FwatvvhMFyKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

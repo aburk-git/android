@@ -1,24 +1,46 @@
 {
   "expo": {
-    "name": "android",
+    "name": "DeBarrios",
     "slug": "android",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "ar.com.debarrios.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSContactsUsageDescription": "Se usa para elegir a quien invitar desde tu agenda, sin guardar tus contactos."
+      }
     },
     "android": {
+      "package": "ar.com.debarrios.app",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": ["POST_NOTIFICATIONS", "READ_CONTACTS"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "03c073e1-736c-436c-954c-747fcf223e85"
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/android-icon-foreground.png",
+          "color": "#0f3d3e"
+        }
+      ]
+    ]
   }
 }
