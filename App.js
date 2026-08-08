@@ -12,6 +12,7 @@ import { useColors } from './src/theme/colors';
 import { registrarNotificaciones } from './src/utils/pushNotifications';
 import { crearClienteBarrio, obtenerNotificacionesNoLeidas, registrarPushToken } from './src/api/barrio';
 import EncabezadoBarrio from './src/components/EncabezadoBarrio';
+import LogoBarrio from './src/components/LogoBarrio';
 import BotonNotificaciones from './src/components/BotonNotificaciones';
 import BuscarDniScreen from './src/screens/BuscarDniScreen';
 import LoginBarrioScreen from './src/screens/LoginBarrioScreen';
@@ -76,6 +77,7 @@ function MainTabs({ route }) {
     headerStyle: { backgroundColor: colors.primary },
     headerTitleAlign: 'center',
     headerTitle: () => (cuenta ? <EncabezadoBarrio cuenta={cuenta} /> : null),
+    headerLeft: () => (cuenta ? <LogoBarrio cuenta={cuenta} /> : null),
     headerRight: () => (cuenta ? <BotonNotificaciones cuentaId={cuenta.id} navigation={navigation} colors={colors} noLeidas={noLeidas} /> : null),
     headerRightContainerStyle: { paddingRight: 16 },
     tabBarActiveTintColor: colors.primary,
