@@ -21,5 +21,5 @@ export default function LogoBarrio({ cuenta }) {
 
 const styles = StyleSheet.create({
   contenedor: { marginLeft: 8 },
-  logo: { width: 30, height: 30, borderRadius: 15 },
+  logo: { width: 42, height: 42, borderRadius: 21 },
 });
